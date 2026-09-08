@@ -1,0 +1,27 @@
+{
+  "users": {
+    "b92b3555-6754-430c-80f3-246a6ae3b88f": {
+      "id": "b92b3555-6754-430c-80f3-246a6ae3b88f",
+      "username": "moymen6767",
+      "displayName": "มอยเม้น",
+      "passwordHash": "50f32c664be75e38d5fc1af24d062930c6edc4e0e9a22c20c0e578e2662394f655fa566cac50682ddd19c1a9aa0208791caae204bfaf5ae281330f79865afcbf",
+      "salt": "0be1a8d142d7b035af020da6af8c6af4",
+      "bio": "ชอบแมว",
+      "genres": [
+        "สยองขวัญ",
+        "ดราม่า"
+      ],
+      "sample": "หฟก",
+      "createdAt": 1788834676372
+    }
+  },
+  "sessions": {
+    "c6fe43d7-8d7f-4fe8-8fbb-e95cd5420b7b": {
+      "userId": "b92b3555-6754-430c-80f3-246a6ae3b88f",
+      "createdAt": 1788834676372
+    }
+  },
+  "swipes": {},
+  "matches": {},
+  "stories": {}
+}

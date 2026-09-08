@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>คู่ที่แมตช์ — คู่เขียน</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <a href="/discover.html" class="wordmark">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c-4 0-9 2-12 5-2 2-3 5-3 8 0 1 0 2 1 3 3-1 6-2 8-4 3-3 5-8 5-12 0-.3 0-.1 1 0z"/><path d="M9.5 14.5L4 20"/></svg>
+      คู่เขียน
+    </a>
+    <div class="nav-links">
+      <span class="nav-user" data-nav-user></span>
+      <a href="/discover.html">ค้นหาคู่เขียน</a>
+      <a href="/matches.html" class="active">คู่ที่แมตช์</a>
+      <a href="/feed.html">เรื่องทั้งหมด</a>
+      <a href="/profile.html">โปรไฟล์</a>
+      <a href="#" id="logoutLink">ออกจากระบบ</a>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="page-header">
+      <h1>คู่ที่แมตช์กัน</h1>
+      <p>เลือกคู่ที่อยากเริ่มแต่งนิยายด้วย แล้วผลัดกันเขียนทีละตอน</p>
+    </div>
+    <div id="matchList"><div class="loading-text">กำลังโหลด...</div></div>
+  </div>
+
+  <div class="modal-overlay" id="createModal">
+    <div class="match-modal" style="text-align:left;">
+      <h2 style="margin-bottom:16px;">เริ่มนิยายเรื่องใหม่</h2>
+      <div class="field">
+        <label style="color:#C9C2AD;">ชื่อเรื่อง</label>
+        <input type="text" id="storyTitle" placeholder="เช่น ฝนที่ปลายฟ้า" />
+      </div>
+      <div class="field">
+        <label style="color:#C9C2AD;">แนวเรื่อง</label>
+        <select id="storyGenre"></select>
+      </div>
+      <div class="actions" style="margin-top:10px;">
+        <button class="btn btn-primary" id="confirmCreate">เริ่มเขียนเลย</button>
+        <button class="btn btn-ghost" id="cancelCreate" style="color:#fff;border-color:#54503f;">ยกเลิก</button>
+      </div>
+    </div>
+  </div>
+
+<script src="/js/api.js"></script>
+<script src="/js/matches.js"></script>
+</body>
+</html>
